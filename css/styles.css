@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1; /* Light gray background for a more modern feel */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #2d3b55; /* Dark blue for the title */
+    margin-bottom: 2rem;
+}
+
+.recommendation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #2d3b55; /* Matching the dark blue theme */
+}
+
+select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa; /* Light gray background for dropdowns */
+    color: #333;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db; /* Blue border on focus */
+    background-color: #eaf7ff; /* Light blue background on focus */
+}
+
+.recommendation-result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa; /* Light background for results */
+    border-radius: 5px;
+    border-left: 5px solid #3498db; /* Blue border for emphasis */
+}
+
+.recommendation-result h2 {
+    color: #2d3b55;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db; /* Bright blue button */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    select {
+        width: 100%;
+    }
+}
